@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600,800,900&display=swap');
 a{
     color:#fff !important;
-    
+
 }
 p
 {
@@ -17,15 +17,208 @@ header
     background-size: cover;
     position: relative;
     display:block;
-    
-    
+    overflow:hidden;
+
 }
+.header
+{
+    padding-top: 10px;
+}
+.header .logo h3
+{
+    font-size:35px !important;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    color:#fff;
+    letter-spacing: 3.5px;
+    margin-left: 100px !important;
+    margin-top: 10px;
+}
+.header .feature-box
+{
+    float:right;
+    margin-right: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    color:#fff;
+    margin-left: -100px !important;
+
+}
+.header .feature-box p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+.header .feature-box h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.header .feature-box .feature-left
+{
+    position: absolute;
+    margin-left: -45px;  
+    margin-top:5px;
+
+
+
+}
+.header .feature-box .feature-box-timing
+{
+    margin-right: 50px;
+}
+.header .feature-box .feature-box-phone
+{
+    margin-right: 90px; 
+}
+.header .logo a
+{
+    color:#fdc812 !important;
+}
+.search-box .search-right p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:#fff;
+    margin-top:20px;
+}
+.search-box .search-left
+{
+
+
+    margin-right: 40px;
+    margin-top: -10px !important;
+    float: right !important;
+
+
+
+}
+.search-box
+{
+    margin-left: 50px;
+}
+.search-box::after
+{
+    content: "";
+    height: 1px;
+    width: 200px;
+    display: inline-block;
+    background:#fff;
+    margin-bottom: 20px;
+
+}
+
 header >.container
 {
     position: relative;
     height: 100%;
     padding: 0;
 }
+.navbar
+{
+
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px !important;
+    position: absolute;
+    margin-top:70px;
+    z-index: 9;
+    top:0px;
+    width: 100%;
+
+}
+
+
+.navbar-nav
+{
+    
+    margin:0 auto;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+.nav-item a:hover
+{
+    color:#fdc812 !important;
+}
+.nav-item a::after {
+    content: ""; 
+    height: 1px;
+    width: 10px;
+    display: inline-block;
+    background:#fff;
+    margin-left: 15px;
+    margin-bottom: 5px;   
+}
+.last::after {
+    content:none !important;
+
+
+
+}
+.navbar-nav .active
+{
+    color:#fdc812 !important;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black !important;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-menu a:hover
+{
+    background-color:#fdc812;
+    color:white !important;
+}
+
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+.navbar.sticky
+{
+    width:100%;
+    position: fixed;
+    margin-top:0px;
+    background: #191919;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.35);
+    animation-name: animationFade;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+    z-index: 100;
+}
+@keyframes animationFade
+{
+    from{
+        opacity: 0;
+        -webkit-transform:translate3d(0, -100%, 0);
+        transform:translate3d(0, -100%, 0);      
+    }
+    to
+    {
+        opacity: 1;
+        -webkit-transform: none;
+        -o-transform: none;
+    }
+}
+.navbar.sticky a{
+    color: #18191d;
+
+}
+
 .hero-text
 {
     position: absolute;
@@ -33,14 +226,14 @@ header >.container
     left:50%;
     transform: translate(-50%,-45%);
     text-align: center;
-   
+
 }
 .hero-text h1
 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 800;
     font-size: 80px;
-    color: rgb(253, 200, 18);
+    color: #fdc812;
 
 }
 .hero-text .lead
@@ -54,20 +247,15 @@ header >.container
 {
     margin-top: -15px;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
 }
-.navbar-nav
+
+#main
 {
-    float:none;
-    margin:0 auto;
-    
-}
-main
-{
-    
+
     /*background: linear-gradient(rgba(253, 200, 18), rgba(253, 200, 18)), url("img/Warstwa111.png"); */
-    background-image: url(img/Warstwa%2010.png);
+    background-image: url(img/main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,6 +263,1219 @@ main
     display:block;
     width: 100%;
     height: 70vh;
+
+
+}
+#main
+{
+    text-align: center;
+}
+#main .text-dark
+{
+    margin-top:100px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black !important;
+    text-align: center !important;
+    margin-bottom: 40px;
+    
+}
+#main .text-secondary
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black !important;
+    margin-bottom: 20px;
+}
+.mainBtn
+{
+    margin-bottom: 20px;
+}
+.mainBtn .btn-first
+{
+   margin-right: 60px;
+    
+}
+#mainBtn
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size:20px;
+    padding: 10px 40px;
+    border:2px solid;
+    border-color: #000;
+    color:#fff;
+    cursor: pointer;
+    margin-top:18px;
+    border-radius: 50px;
+    margin-top: 30px;
+    animation: shadow-pulse 2s infinite;
+
+
+
+
+}
+#mainBtn:hover
+{
+    background-color: #fff;
+    color:black !important;
+    animation: none;
+    text-decoration: none;
+}
+
+/*---------------------------------------------------tire----------start-----------------*/
+#tire
+{
+    background-image: url(img/slice1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display:block;
+    width: 100%;
+    height: 58vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+.tire-first
+{
+    
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -70px;
+}
+.tire-first h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#fdc812;
+}
+.tire-first p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.tire-first .tire-first-description
+{
+    margin-top: -155px !important;
+    text-align: justify;
+    
+    
+}
+.tire-first .tire-first-description .first-description
+{
+    width:450px;
+    
+}
+.tire-first .tire-first-description .second-description
+{
+    width:300px;
+}
+.tire-second
+{
+    
+    margin-top: 40px;
+    margin-left: -170px;
+}
+.tire-second h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left:60px;
+}
+.tire-second .description p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400; 
+    margin-top: -175px;
+    margin-left: 60px;
+}
+.tire-third
+{
+    margin-top:70px;    
+    margin-left: 110px;
+    
+}
+.tire-third h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left:70px;
+    width: 350px;
+}
+.tire-third .description p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left:70px;
+    margin-top: -50px;
+    width: 300px;
+    
+}
+/*---------------------------------------------------tire----------end-----------------*/
+
+#oferta
+{
+    background-image: url(img/slice2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+#oferta .description
+{
+    color:#fff;
+    margin-top: 135px;
+}
+#oferta .description .title, i
+{
+    color: #fdc812 !important;
+    
+}
+#oferta .description .bold
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800 !important;
+    font-size: 15px;
+}
+.description ul li
+{
+    list-style: none;
+    margin-left: -20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+.description h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+.description li
+{
+    margin-bottom: 8px;
+}
+.firsttxt
+{
+    margin-bottom: 8px;
+}
+
+#offerBtn, #tiresBtn
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size:20px;
+    padding: 13px 50px;
+    border:2px solid;
+    border-color: #fdc812;
+    color:#fff !important;
+    cursor: pointer;
+    margin-top:18px;
+    border-radius: 50px;
+    margin-top: 30px;
+    animation: shadow-pulse 2s infinite;
+
+
+
+}
+#offerBtn:hover, #tiresBtn:hover
+{
+    
+    background-color: #fdc812;
+    color:white !important;
+    animation: none;
+    text-decoration: none;
+
+}
+
+#tiresBtn:hover
+@keyframes shadow-pulse
+{
+    0%
+    {
+        box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+    }
+
+    100%
+    {
+        box-shadow: 0 0 0 20px rgba(0,0,0,0.2);
+    }
+
+}
+#tires
+{
+    background-image: url(img/road.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+    text-align: center;
+}
+.tires-title h3
+{
+    margin-top:150px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size:40px;
+    color:black;
+    margin-bottom: 30px !important;
+}
+#tires .boxed
+{
+    background: rgba(0,0,0,0.702);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size:15px;
+    color:white;
+    border-radius: 20px;
+}
+#tires .boxed p
+{
+    padding-top: 50px;
+}
+#tires .btn-first
+{
+    margin-right: 50px;
+    font-size: 20px !important;
+    margin-bottom: 50px;
+    
+}
+#footer
+{
+    padding: 20px 20px 0 20px;
+    background-color: #191919;
+    padding-right: 100px;
+    position: relative;
+    z-index: 2;
     
 
+}
+
+#footer h4
+{
+    
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fdc812;
+    
+}
+#footer h4 a
+{
+
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+}
+#footer h3
+{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+#footer p
+{
+
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    color:#fff;
+}
+#footer .email
+{
+    width: 300px !important;
+}
+#footer-copyright
+{
+    text-align: right !important;
+    background-color:black;
+    padding:5px;
+   
+}
+#footer .feature-right ul
+{
+    list-style: none;
+    
+}
+#footer a
+{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+#footer a:hover
+{
+    text-decoration: none !important;
+}
+#footer .feature-box .feature-left
+{
+    position: absolute;
+    margin-left: -40px;  
+    margin-top:5px;
+
+
+
+}
+#footer .feature-box .feature-box-menu .feature-left
+{
+    position: absolute;
+    margin-left: -5px !important;
+    margin-top:5px;
+}
+#footer .feature-box .feature-box-menu .feature-right li
+{
+   margin-top:-6px !important;
+}
+#footer .feature-box .feature-box-menu .feature-right .active
+{
+    color:#fdc812 !important;
+}
+.footer-copyright a
+{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+/*------------wymiana---opon------------------------*/
+#header-wymiana-opon
+{
+    width: 100%;
+    height: 45vh;
+    background:url("img/banner_container.png") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display:block;
+    overflow:hidden;
+    
+
+}
+#header-wymiana-opon .hero-text h1
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fdc812;
+    text-align: left;
+}
+#header-wymiana-opon .hero-text
+{
+    text-align: right;
+    transform: translate(-95%,100%);
+    
+    
+}
+#main-wymiana-opon
+{
+    
+    background-color: #fdc812;
+    
+}
+#main-wymiana-opon .welcome-guy
+{
+   
+    
+   
+}
+#main
+{
+    text-align: center;
+   
+}
+#main-wymiana-opon .text-dark
+{
+    margin-top:100px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black !important;
+    text-align: left !important;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    width:600px;
+    
+
+}
+#main-wymiana-opon .text-secondary
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black !important;
+    margin-bottom: 20px;
+    line-height:25px;
+}
+#main-wymiana-opon .text-secondary p
+{
+    margin-top:50px !important;
+}
+#description
+{
+    width:100%;
+    height:60vh;
+    background-color:white;
+    overflow:hidden !important;
+    z-index: 3;
+    position: relative;
+}
+#description .right-first
+{
+    
+    width:40% !important;
+    background-color:black;
+    height:30vh;
+}
+#description .text-right h3
+{
+    margin: 110px 50px 110px 0;
+    text-transform: uppercase;
+    color: #fdc812;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+#description .right-second
+{
+    width:40% !important;
+    background-color:white;
+    height:30vh;
+    color:black;
+}
+#description .text-right-second h3
+{
+    margin: 110px 50px 110px 0;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+#description .left-first
+{
+    
+    width:58%;
+    height:30vh;
+    
+}
+#description .text-left
+{
+    margin: 110px 230px 110px 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height:25px;
+}
+#description .left-second
+{
+    width:58%;
+    height:30vh;
+    background-color: #333333;
+}
+#description .text-left-second
+{
+    margin: 110px 220px 110px 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:white;
+    line-height:25px;
+}
+#offer
+{
+    background-image: url(img/background_offer.png);
+    width: 100%;
+    height: 96vh !important;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+#offer h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:black !important;
+    margin:40px 0 30px;
+}
+#offer p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black !important;
+    line-height: 25px;
+}
+#offer ul
+{
+    list-style: none;
+    margin-left:-40px;
+}
+#offer .text-left
+{
+    position: absolute;
+    margin: 0px 0 30px 0;
+    
+}
+#offer .text-left .bottom-text
+{
+    text-align: center;
+}
+#offer .top-title
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0px 0 30px;
+    color:black;
+}
+#offer ul h5
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:white !important;
+}
+#offer ul p
+{
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+#offer .bottom-text
+{
+    margin-right: -100px;
+}
+#offer .bottom-text h4
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:white !important;
+}
+#offer .bottom-text h5
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    color:black;
+}
+#offer .tire_wymiana_opon
+{
+    z-index: -2;
+    margin-top: -100px;
+    margin-left: 10px;
+    
+}
+/*---------------------------ZAKLAD-WULKANIZACYJY---------------------*/
+#header-wymiana-opon .hero-text-zaklad h1
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fdc812;
+    text-align: left;
+    
+
+}
+#header-wymiana-opon .hero-text-zaklad
+{
+    text-align: ;
+    transform: translate(10%,160%);
+}
+#oferta-zaklad
+{
+    background-color:#fdc812;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    text-align: center;
+}
+#oferta-zaklad h3
+{
+    margin:100px 0 50px 0;
+    text-transform: uppercase;
+    color:black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    
+}
+#oferta-zaklad h5
+{
+    text-transform: uppercase;
+    color:black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top:10px;
+}
+#oferta-zaklad .description
+{
+    padding-left: 200px !important;
+    text-align: justify;
+}
+#oferta-zaklad .zaklad-welcome-guy
+{
+    float:right;
+    
+}
+#description-zaklad
+{
+    width:100%;
+    height:90vh;
+    background-color:white;
+    overflow:hidden !important;
+    z-index: 3;
+    position: relative;
+}
+#description-zaklad .right-first
+{
+
+    width:40% !important;
+    background-color:black;
+    height:60vh;
+}
+#description-zaklad .text-right h3
+{
+    margin: 110px 50px 110px 0;
+    text-transform: uppercase;
+    color: #fdc812;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+}
+#description-zaklad .right-second
+{
+    width:40% !important;
+    background-color:#fdc812;
+    height:30vh;
+    color:black;
+}
+#description-zaklad .text-right-second h3
+{
+    margin: 110px 50px 110px 0;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+#description-zaklad .left-first
+{
+
+    width:58%;
+    height:30vh;
+
+}
+#description-zaklad .text-left
+{
+    margin: 110px 230px 110px 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height:25px;
+}
+#description-zaklad .text-left span
+{
+    color:#fdc812;
+}
+#description-zaklad .left-second
+{
+    width:58%;
+    height:30vh;
+    background-color: #333333
+}
+#description-zaklad .text-left-second
+{
+    margin: 110px 220px 110px 30px;    
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:white;
+    line-height:25px;
+}
+/*--------------------------------skup-opon------------------------*/
+
+#header-skup-opon .hero-text-skup h1
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fdc812;
+    text-align: left;
+
+
+}
+#header-skup-opon .hero-text-skup
+{
+   
+    transform: translate(21%,210%);
+}
+#header-skup-opon
+{
+    width: 100%;
+    height: 45vh;
+    background:url("img/banner_skup_opon.png") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    overflow:hidden;
+}
+#main-skup-opon
+{   
+  
+    background-color: #fdc812;
+    width: 100%;
+    height: 40vh;
+    
+    
+}
+#main-skup-opon .title
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black;
+    text-transform: uppercase;
+    margin:100px 0 30px 0;
+    
+}
+#main-skup-opon p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black;
+}
+#skup-opon-description
+{
+    
+    width:100%;
+    height: 70vh;
+    background:url("img/skup_opon_background.png") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    overflow:hidden;
+    color:white !important;
+}
+#skup-opon-description ul
+{
+    margin-top:10px;
+    margin-left:-20px;
+}
+#skup-opon-description h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin:60px 0 20px 0;
+    color:#fdc812;
+}
+#skup-opon-description p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;   
+}
+#skup-opon-description .tires img
+{
+    margin-left:200px;
+    
+}
+/*------------------oponynoweiuzywane----------------*/
+#header-opony-nowe
+
+{
+    width: 100%;
+    height: 45vh;
+    background:url("img/banner_noweiuzywane.png") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    overflow:hidden
+}
+#header-opony-nowe .hero-text-opony-nowe h1
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fdc812;
+    text-align: left;
+
+
+}
+#header-opony-nowe .hero-text-opony-nowe
+{
+    transform: translate(21%,210%);
+}
+#main-opony-nowe-uzywane
+{   
+
+    background-color: #fdc812;
+    width: 100%;
+    height: 40vh;
+
+
+}
+#main-opony-nowe-uzywane .title
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black;
+    text-transform: uppercase;
+    margin:100px 0 30px 0;
+
+}
+#main-opony-nowe-uzywane p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black;
+    line-height: 25px;
+}
+#tires-opony-nowe
+{
+    background-image: url(img/background_noweizuwayne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+    text-align: center;
+}
+.tires-title-opony-nowe h3
+{
+    margin-top:50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size:40px;
+    color:black;
+    margin-bottom: 30px !important;
+}
+#tires-opony-nowe .boxed
+{
+    background: rgba(0,0,0,0.702);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size:15px;
+    color:white;
+    border-radius: 20px;
+    line-height: 25px;
+}
+#tires-opony-nowe .boxed p
+{
+    padding-top: 50px;
+    padding-left:70px;
+    padding-right: 70px;
+    
+}
+#tires-opony-nowe ul
+{
+    list-style:none;
+    padding-bottom: 50px;
+}
+#description-opony-nowe
+{
+    width:100%;
+    height:30vh;
+    background-color:white;
+    overflow:hidden !important;
+    z-index: 3;
+    position: relative;
+}
+#description-opony-nowe .right-first
+{
+
+    width:40% !important;
+    background-color:black;
+    height:30vh;
+}
+#description-opony-nowe .text-right h3
+{
+    margin: 100px 40px 100px 0;
+    text-transform: uppercase;
+    color: #fdc812;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    width: 300px;
+    float:right;
+}
+#description-opony-nowe .left-first
+{
+
+    width:58%;
+    height:30vh;
+
+}
+#description-opony-nowe .text-left
+{
+    margin: 110px 230px 110px 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height:25px;
+}
+#description-opony-nowe .text-left span
+{
+    color:#fdc812;
+}
+#main-opony-nowe
+{
+
+    background-image: url(img/background_welcomeguy_noweiuzywane.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+    text-align: center; 
+
+}
+#main-opony-nowe .text-left
+{
+    width:680px;
+}
+#main-opony-nowe .welcome-guy
+{
+    margin-right:-350px;
+    margin-top:40px;
+}
+#main-opony-nowe
+{
+    text-align: center;
+
+}
+#main-opony-nowe .text-dark
+{
+    margin-top:70px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black !important;
+    text-align: left !important;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    width:900px;
+
+
+}
+#main-opony-nowe h4
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color:white !important;
+    text-align: left !important;
+    margin: 40px 0 40px 0;
+}
+#main-opony-nowe .text-secondary
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black !important;
+    margin-bottom: 20px;
+    line-height:25px;
+}
+#main-opony-nowe .text-secondary p
+{
+    margin-top:50px !important;
+}
+/*-------------------------malowaniefelg-----------------*/
+#header-malowanie-felg
+
+{
+    width: 100%;
+    height: 45vh;
+    background:url("img/banner_malowanie_felg.png") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    overflow:hidden
+}
+#header-malowanie-felg .hero-text-malowanie-felg h1
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fdc812;
+    text-align: left;
+
+
+}
+#header-malowanie-felg .hero-text-malowanie-felg
+{
+    transform: translate(21%,210%);
+}
+#main-malowanie-felg
+{   
+
+    background-color: #fdc812;
+    width: 100%;
+    height: 40vh;
+
+
+}
+#main-malowanie-felg .title
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black;
+    text-transform: uppercase;
+    margin:100px 0 30px 0;
+
+}
+#main-malowanie-felg p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black;
+    line-height: 25px;
+}
+.metoda-proszkowa
+{   
+
+    background-color: #333333;
+    width: 100%;
+    height: 30vh;
+
+
+}
+.metoda-proszkowa .title
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:#fdc812;
+    text-transform: uppercase;
+    margin:50px 0 30px 0;
+    
+
+}
+.metoda-proszkowa p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:white;
+    line-height: 25px;
+}
+/*-----------------------------prostowanie-felg----------------------------*/
+#header-prostowanie-felg
+{
+    background:url("img/banner_prostowanie%20_felg.png") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    overflow:hidden;
+    width: 100%;
+    height:45vh;
+}
+#header-prostowanie-felg .hero-text-prostowanie-felg h1
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fdc812;
+    text-align: left;
+
+
+}
+#header-prostowanie-felg .hero-text-prostowanie-felg
+{
+    transform: translate(21%,210%);
+}
+#main-prostowanie-felg
+{   
+
+    background-color: #fdc812;
+    width: 100%;
+    height: 95vh;
+
+
+}
+#main-prostowanie-felg .text-dark
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:black !important;
+    text-transform: uppercase;
+    margin:50px 0 30px 0;
+    
+
+}
+#main-prostowanie-felg ul
+{
+    margin-left:-25px;
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+#main-prostowanie-felg i
+{
+    color:white !important;
+}
+#main-prostowanie-felg .text-secondary
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black !important;
+    line-height: 25px;
+    width:700px;
+}
+#main-prostowanie-felg p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:black;
+    line-height: 30px;
+    
+}
+#main-prostowanie-felg .felga
+{
+    margin-left: 100px;
+    margin-top:100px;
 }

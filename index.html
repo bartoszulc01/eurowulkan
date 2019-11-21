@@ -1,77 +1,402 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header id="home">
-  <div class="header">
-      <div class="container">
-          <h1>eurowulkan</h1>
-      </div>
-  </div>
-   <div class="container">
-       <div class="hamburger-menu">
-          <i class="fas fa-bars toggle"></i>
-          <i class="fas fa-times toggle"></i>
-       </div>
-       <nav class="navbar navbar-expand-lg">
-           <ul class="navbar-nav text-center">
-               <li class="nav-item">
-                   <a class="nav-link" href="#wulkanizacja">Wulkanizacja</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#wymiana">Wymiana</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#zakladwulkanizacyjny">Zakład wulkanizacyjny</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#opony">Opony</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#felgi">Felgi</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#cennik">Cennik</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#pytania">Pytania</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#galeria">Galeria</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#kontakt">Kontakt</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#blog">Blog</a>
-               </li>
-           </ul>
-       </nav>
-       <div class="hero-text w-100 text-white px-2 px-sm-0">
-           <h1 class="display-4">EURO WULKAN</h1>
-           <p class="lead mb-4">PROFESJONALNA WULKANIZACJA<br/>I WYMIANA OPON W KRAKOWIE</p>
-           <br/>
-           
-           <p class="secondp">Nasz zakład w Krakowie specjalizuje sie świadczeniem usług wulkanizacyjnych. Zajmujemy się przede <br/>wszystkim wulkanizacją, czyli naprawą opon oraz jej coroczną wymianą.</p>
-       </div>
-   </div>
-    
-</header>
+    <header id="home">
+        <div class="header">
 
-<main id="main">
-    <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 logo">
+                    <h3>EURO-<a>WULKAN</a></h3>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box">
+                        <div class="feature-box-timing">
+                            <div class="feature-left">
+                                <img src="img/timing.png" alt="">
+                            </div>
+                            <div class="feature-right">
+
+                                <p>Godziny otwarcia</p>
+                                <h3>9:00-22:00</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box">
+                        <div class="feature-box-phone">
+                            <div class="feature-left">
+
+                                <img src="img/phone.png" alt="">
+                            </div>
+                            <div class="feature-right">
+                                <p>Rezerwacja bez kolejki</p>
+                                <h3>+48 511 681 680</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="search-box">
+                        <div class="search-left">
+                            <img src="img/search.png" alt="">
+
+                        </div>
+                        <div class="search-right">
+                            <p>szukaj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+            <div class="hamburger-menu">
+                <!--<i class="fas fa-bars toggle"></i>
+                <i class="fas fa-times toggle"></i> !-->
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" href="index.html">Wulkanizacja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wymiana_opon.html">Wymiana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zaklad.html">Zakład wulkanizacyjny</a>
+                    </li>
+                    <li class="nav-item">
+                       <div class="dropdown">
+                        <a class="nav-link">Opony</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="opony_nowe_uzywane.html">Opony używane</a>
+                            <a class="dropdown-item" href="skup_opon.html">Skup opon</a>
+
+                        </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link">Felgi</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="malowanie_felg.html">Malowanie felg</a>
+                                <a class="dropdown-item" href="prostowanie_felg.html">Prostowanie felg</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cennik.html">Cennik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">Pytania</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link last" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hero-text w-100 text-white px-2 px-sm-0">
+                <h1 class="display-4">EURO WULKAN</h1>
+                <p class="lead mb-4">PROFESJONALNA WULKANIZACJA<br/>I WYMIANA OPON W KRAKOWIE</p>
+                <br/>
+
+                <p class="secondp">Nasz zakład w Krakowie specjalizuje sie świadczeniem usług wulkanizacyjnych. Zajmujemy się przede <br/>wszystkim wulkanizacją, czyli naprawą opon oraz jej coroczną wymianą.</p>
+            </div>
+        
+
+    </header>
+
+    <main id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-dark">
+                            TANIA <a>WULKANIZACJA</a> W KRAKOWIE
+                        </h3>
+                        <br>
+                        <p class="text-secondary">
+                        Nasza oferta skierowana jest do kierowców z Krakowa, a także przejezdnych, którzy "złapali gumę" przebywając na terenie<br/>Krakowa lub okolic.
+                        </p>
+                        <br/>
+                        <p class="text-secondary">
+                            Naszą firmę tworzy wykwalifikowany personel, który służy radą i pomocą w każdej nietypowej sytuacji związanej <br/>z wulkanizacją. Swoją pracę wykonujemy na najwyższej jakości maszynach, dzięki czemu efekty są znakomite i zadowalają naszych klientów.
+                        </p>
+                        <br/>
+                        <p class="text-secondary">
+                        Doświadczenie na rynku sprawiło, że posiadamy wielu stałych klientów, a ich liczba stale rośnie. Gwarantujemy profesjonalizm, <br/>pewność miłej i rzetelnej usługi, wysoką jakość oraz konkurencyjne ceny!
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="mainBtn">
+                       
+                        <a href="" id="mainBtn" class="btn-first">Zakład wulkanizacyjny</a>
+                       
+                        
+                        <a href="" id="mainBtn" class="btn-first">Kontakt</a>
+                           
+                        </div>
+                    </div>
+                </div>    
+        
+        </div>
+    
+    </main>
+
+
+<section id="tire">
+    <div class="container">
+        <div class="row">
+                   
+                <div class="col-md-4">
+                   <div class="tire-first">
+                    <h3>WULKANIZACJA 24H W KRAKOWIE</h3>
+                     <img src="img/3.png" alt="">
+                     <div class="tire-first-description">
+                     <div class="first-description">
+                    <p>Wiedząc o tym, jak ważny jest dobry stan opon, robimy wszystko, co w naszej mocy, aby zapewnić jak najszybszą pomoc. W związku z tym oferujemy usługi wulkanizacji od wczesnych godzin rannych do późnego wieczoru</p>
+                    <br/>
+                    </div>
+                    <div class="second-description">
+                    <p>Wulkanizacja powstała z myślą o lepszej i sprawniejszej obsłudze naszych klientów korzystających z usług firmy Euro-Hol, a także jest odpowiedzią na rosnące zainteresowanie tego rodzaju usługami.     </p>
+                       </div>
+                    
+                    </div>
+                    </div>
+            </div>
+               
+                <div class="col-md-4 offset-md-4">
+                   <div class="tire-second">
+                    <h3>GWARANCJA JAKOŚCI</h3>
+                    <img src="img/2.png" alt="">
+                    <div class="description">
+                    <p>Wieloletnie doświadczenie, wykwalifikowani pracownicy oraz kompleksowa oferta sprawiają, że klienci wybierają nas i chwalą sobie korzystanie z naszych usług. </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-md-3 offset-md-3"></div>
+            <div class="col-md-3 offset-md-3 tire-third">
+                <h3>NAJLEPSZY SPRZĘT</h3>
+                <img src="img/1.png" alt="">
+                <div class="description">
+                <p>Posiadamy profesjonalny sprzęt do wymiany oraz wulkanizacji opon. Dzięki niemu jesteśmy w stanie wymienić oponę na miejscu w pojazdach do 3,5 tony. Głównie do naszego zakładu zgłaszają się kierowcy samochodów osobowych, dostawczych oraz busów. Przeprowadzamy także wymianę kół na drodze w pojazdach ciężarowych oraz w autobusach.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+        
+            
+    
+</section>
+<section id="oferta">
+   
+       <div class="row">
+           <div class="col-md-6">
+           <img src="img/slice3.png" class="tire-img float-left" alt="tire">
+           </div>
+           
+           <div class="col-md-6">
+               <div class="description">
+                   <h3>NASZA <a class="title">OFERTA</a></h3>
+                <br/>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i> wymiana kół na drodze w pojazdach ciężarowych oraz w autobusach,</li>
+                    <li><i class="fas fa-arrow-right"></i> wymiana opon zimowych, letnich oraz całorocznych,</li>
+                    <li><i class="fas fa-arrow-right"></i> sprzedaż opon nowych i używanych,</li>
+                    <li><i class="fas fa-arrow-right"></i> obsługa opon Run Flat 23",</li>
+                    <li><i class="fas fa-arrow-right"></i> przegląd stanu technicznego ogumienia,</li>
+                    <li><i class="fas fa-arrow-right"></i> obsługa 4x4 oraz busów,</li>
+                    <li><i class="fas fa-arrow-right"></i> komputerowe wyważanie kół,</li>
+                    <li><i class="fas fa-arrow-right"></i> wspomaganie rozruchu w pojazdach,</li>
+                    <li><i class="fas fa-arrow-right"></i> pomoc na drodze,</li>
+                    <li><i class="fas fa-arrow-right"></i> zabezpieczenie miejsca zdarzenia</li>
+                    
+                </ul>
+                <br/>
+                   <p class="firsttxt">Oferujemy także wulkanizację opon motocyklowych oraz ich serwis i naprawę. Posiadamy na</p><p> sprzedaż opony motocyklowe różnych matek.</p>
+                   <a href="" id="offerBtn">Ile to kosztuje</a>
+           </div>
+           
+       
+           </div>
+             
+        </div>
+    
+</section>
+<section id="tires">
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12 tires-title">
+               <h3>DYSTRYBUCJA NA <a>WYSOKIM POZIOMIE</a></h3>
+               </div>
+               <div class="col-md-12">
+                   <div class="boxed">
+                       <p>Zaopatrujemy się w opony w jednej z najlepiej wyposażonych i największych hurtowni w Polsce. To powoduje, że mamy do<br/>zaoferowania produkty bardzo wysokiej jakości w atrakcyjnych cenach.</p>
+                       <p> W naszej ofercie znajdą Państwo wszystkie możliwe rodzaje opon do samochodów osobowych, terenowych, ciężarowych, a<br/> także do pojazdów przemysłowych i do motocykli.</p> 
+                       <p>Głównie oferujemy opony firm takich jak: Michelin, Dunlop, Goodyear, Pirelli, Sava, Kormoran, Dębica, Barum, Fulda, Kleber, <br/>Bridgestone, Firestone, Hankook, Uniroyal, BFGoodrich, Riken, Continental, Viking, Dayton.</p>
+                      
+                   
+              
+              <div class="col-md-12">
+                  <a href="" id="tiresBtn" class="btn-first">Opony</a>
+                  <a href="" id="tiresBtn" class="btn-second">Wymiana opon</a>
+              </div>
+                   </div>
+           </div>
+           </div>
+       </div>
+   
+    
+</section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-3">
+                    <h4>
+                    <a>©</a> EURO-WULKAN
+                    </h4> 
+                    <p>Nasza oferta skierowana jest do kierowców z Krakowa, a także przyjezdnych, którzy “złapali gumę” przebywając na terenie Krakowa lub okolic. </p>
+                </div>
+               
+                
+                <div class="col-md-2">
+                    
+                        <div class="feature-box">
+                            <div class="feature-box-menu">
+                                <div class="feature-left">
+                                    <img src="img/menu.png" alt="">
+                                </div>
+                                <div class="feature-right email">
+
+                                    <ul class="">
+                                        <li>
+                                            <a class="active" href="index.html">Wulkanizacja</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="wymiana_opon.html">Wymiana</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="zaklad.html">Z. wulkanizacyjny</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="opony_nowe_uzywane.html">Opony</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="malowanie_felg.html">Felgi</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="cennik.html">Cennik</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="kontakt.html">Kontakt</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="blog.html">Blog</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box">
+                        <div class="feature-box-address">
+                            <div class="feature-left">
+
+                                <img src="img/address.png" alt="">
+                            </div>
+                            <div class="feature-right email">
+                                <p>Adres</p>
+                                <h3>ul. Klimeckiego 19<br/>30-705 Kraków</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+
+                    <div class="feature-box">
+                        <div class="feature-box-timing">
+                            <div class="feature-left">
+                                <img src="img/timing.png" alt="">
+                            </div>
+                            <div class="feature-right email">
+
+                                <p>Godziny otwarcia</p>
+                                <h3>Pn-Nd: 9:00-22:00</h3>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box">
+                        <div class="feature-box-phone">
+                            <div class="feature-left">
+
+                                <img src="img/phone.png" alt="">
+                            </div>
+                            <div class="feature-right email">
+                                <p>Rezerwacja bez kolejki</p>
+                                <h3>+48 511 681 680</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1">
+                    <div class="feature-box">
+                        <div class="feature-box-mail">
+                            <div class="feature-left">    
+
+                                <img src="img/mail.png" alt="">
+                            </div>
+                            <div class="feature-right email">
+                                <p>Adres mailowy</p>
+                                <h3>kontakt@euro-wulkan.pl</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <div id="footer-copyright">
+    <div class="container">
+    <div class="footer-copyright">
+        <a href="https://haiku.com.pl/">Projekt i realizacja: Agencja interaktywna Haiku Studio</a>
     </div>
-</main>
+    </div>
+    </div>
 <script src="https://kit.fontawesome.com/ba33ab971e.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
